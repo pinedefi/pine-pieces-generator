@@ -47,5 +47,5 @@ app.on('activate', () => {
 
 ipcMain.on('img', (e,args) => {
   console.log(args)
-  ImageDataURI.outputFile( args[1], `${args[0]}.png`);
+  ImageDataURI.outputFile( args[1], `imgoutput/${args[0]}.png`);
 });
